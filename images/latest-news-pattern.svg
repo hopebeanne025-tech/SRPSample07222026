@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="900" viewBox="0 0 1920 900">
+
+<style>
+
+.light{fill:#0B5D46;opacity:.08;}
+.medium{fill:#0B5D46;opacity:.12;}
+.dark{fill:#0B5D46;opacity:.18;}
+.outline{
+fill:none;
+stroke:#0B5D46;
+stroke-width:3;
+opacity:.08;
+}
+
+</style>
+
+<!-- TOP LEFT -->
+
+<rect class="light" x="-120" y="-40" width="280" height="280" transform="rotate(45 20 100)"></rect>
+
+<rect class="medium" x="90" y="50" width="120" height="120" transform="rotate(45 150 110)"></rect>
+
+<rect class="outline" x="180" y="120" width="140" height="140" transform="rotate(45 250 190)"></rect>
+
+<!-- TOP RIGHT -->
+
+<rect class="light" x="1650" y="-80" width="260" height="260" transform="rotate(45 1780 50)"></rect>
+
+<rect class="outline" x="1530" y="70" width="130" height="130" transform="rotate(45 1595 135)"></rect>
+
+<!-- BOTTOM LEFT -->
+
+<rect class="medium" x="-80" y="650" width="220" height="220" transform="rotate(45 30 760)"></rect>
+
+<rect class="outline" x="140" y="640" width="150" height="150" transform="rotate(45 215 715)"></rect>
+
+<rect class="dark" x="240" y="730" width="90" height="90" transform="rotate(45 285 775)"></rect>
+
+<!-- BOTTOM RIGHT -->
+
+<rect class="light" x="1740" y="650" width="220" height="220" transform="rotate(45 1850 760)"></rect>
+
+<rect class="outline" x="1580" y="690" width="150" height="150" transform="rotate(45 1655 765)"></rect>
+
+<rect class="medium" x="1470" y="760" width="90" height="90" transform="rotate(45 1515 805)"></rect>
+
+</svg>
