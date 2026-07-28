@@ -551,58 +551,80 @@ Notable achievements and recognitions throughout Senator Robin Padilla's career.
 
 </section>
 </section>
+
 <!-- ================= FOOTER ================= -->
-
-
 <footer class="footer">
 
-<div class="container">
+    <div class="container footer-wrapper">
 
-<p>
+        <div></div>
 
-© 2026 Office of Senator Robin Padilla
+        <!-- Social Icons -->
+        <div class="footer-socials">
 
-</p>
+            <a href="https://www.facebook.com/SenRobinhoodPadilla" class="footer-social" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
 
-<p>
+           <a href="https://www.instagram.com/" class="footer-social" target="_blank">
+                <i class="fab fa-instagram"></i>
 
-</p>
+            <a href="https://x.com/" class="footer-social" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+           <a href="https://www.tiktok.com/" class="footer-social" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" class="footer-social" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+  <!-- Senate Logo -->
+        <a href="index.html" class="footer-logo">
+            <img src="images/senate-logo.png" alt="Senate Logo">
+        </a>
+
+    </div>
+<div class="footer-bottom">
+
+    <p>
+        Copyright © 2026 <strong>Office of Senator Robin Padilla</strong>.
+        All Rights Reserved.
+    </p>
+
+    <a href="privacy-policy.html">Privacy Policy</a>
 
 </div>
-
 </footer>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function(){
 
-    const counters = document.querySelectorAll(".counter");
+    const backToTop = document.getElementById("backToTop");
 
-    counters.forEach(counter => {
+    if(!backToTop) return;
 
-        const target = +counter.getAttribute("data-target");
-        let count = 0;
+    window.addEventListener("scroll", function(){
 
-        const updateCounter = () => {
+        if(window.scrollY > 300){
+            backToTop.style.display = "flex";
+        }else{
+            backToTop.style.display = "none";
+        }
 
-            const increment = Math.ceil(target / 100);
+    });
 
-            if (count < target) {
+    backToTop.addEventListener("click", function(){
 
-                count += increment;
-
-                if (count > target) count = target;
-
-                counter.innerText = count;
-
-                requestAnimationFrame(updateCounter);
-
-            }
-
-        };
-
-        updateCounter();
+        window.scrollTo({
+            top:0,
+            behavior:"smooth"
+        });
 
     });
 
@@ -691,9 +713,32 @@ document.addEventListener("DOMContentLoaded", () => {
     counters.forEach(counter=>observer.observe(counter));
 
 });
+
+const backToTop = document.getElementById("backToTop");
+
+window.onscroll = function(){
+
+    if(document.documentElement.scrollTop > 300){
+        backToTop.style.display = "block";
+    }else{
+        backToTop.style.display = "none";
+    }
+
+};
+
+backToTop.onclick = function(){
+
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    });
+
+};
 </script>
 
-
-
+<button id="backToTop" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+</button>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
