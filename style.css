@@ -2537,18 +2537,145 @@
         color:#d4af37 !important;
 
     }
-    .accomplishments-banner{
+    /*==================================================
+ HERO BANNER
+==================================================*/
+
+.accomplishments-banner{
+
+    position:relative;
+
+    padding:190px 0 140px;
+
+    color:#fff;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.accomplishments-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
 
     background:
-    linear-gradient(rgba(5,40,30,.75),rgba(5,40,30,.75)),
+
+    linear-gradient(rgba(0,40,20,.75),rgba(0,40,20,.80)),
+
     url(images/TR.jpg);
 
     background-size:cover;
+
     background-position:center;
 
-    padding:180px 0 120px;
+    z-index:-2;
 
-    }
+}
+
+.accomplishments-banner::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:url(images/senate-pattern.png);
+
+    opacity:.08;
+
+    z-index:-1;
+
+}
+
+.banner-breadcrumb{
+
+    margin-bottom:18px;
+
+    font-size:.95rem;
+
+}
+
+.banner-breadcrumb a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+.banner-breadcrumb span{
+
+    opacity:.8;
+
+    margin:0 6px;
+
+}
+
+.accomplishments-banner h1{
+
+    font-size:3.2rem;
+
+    font-weight:800;
+
+    margin:18px 0;
+
+}
+
+.accomplishments-banner p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:1.1rem;
+
+    line-height:1.9;
+
+    opacity:.95;
+
+}
+
+.scroll-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-top:40px;
+
+    padding:14px 35px;
+
+    border-radius:50px;
+
+    background:#C59D32;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.scroll-btn:hover{
+
+    transform:translateY(-4px);
+
+    color:#fff;
+
+    background:#0D5C3D;
+
+}
     .bill-card{
         background:#fff;
         border-radius:12px;
@@ -2606,28 +2733,43 @@
         line-height:1.6;
         margin-bottom:0;
     }
-    .search-box{
+    .search-wrapper{
 
-    display:flex;
+    max-width:700px;
 
-    gap:15px;
+    margin:50px auto;
 
-    background:rgba(255,255,255,.08);
+    position:relative;
 
-    padding:20px;
+}
 
-    border-radius:18px;
+.search-wrapper i{
 
-    backdrop-filter:blur(18px);
+    position:absolute;
 
-    }
+    left:20px;
 
-    .search-box input,
-    .search-box select{
+    top:50%;
 
-    height:55px;
+    transform:translateY(-50%);
 
-    }
+    color:#888;
+
+}
+
+.search-wrapper input{
+
+    padding:18px 20px 18px 55px;
+
+    border-radius:50px;
+
+    border:none;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    font-size:1rem;
+
+}
     .news-card{
 
     transition:.4s;
@@ -2655,7 +2797,11 @@
 
     position:relative;
 
-    }
+    padding-top:80px;
+
+    border-top:4px solid #C59D32;
+
+}
 
     .news-section::before{
 
@@ -2967,6 +3113,7 @@
     background:#198754 !important;
     color:#fff !important;
     border:none !important;
+    
 
     padding:15px 45px !important;
     border-radius:50px !important;
@@ -3451,4 +3598,420 @@
 
 .footer-bottom a:hover{
     color:#0B5D46 !important;
+}
+.contact-form-wrapper{
+    max-width:600px;;      /* Liit ng form */
+    width:100%;
+    margin:0 auto;        /* Center */
+}
+/*====================================
+BIOGRAPHY OFFCANVAS
+====================================*/
+
+.biography-panel{
+
+    width:520px !important;
+
+}
+
+.biography-panel .offcanvas-header{
+
+    background:#0B5D3B;
+
+    color:#fff;
+
+}
+
+.biography-panel .offcanvas-title{
+
+    font-weight:700;
+
+    font-size:1.4rem;
+
+}
+
+.bio-photo{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid #D4AF37;
+
+    margin-bottom:25px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.bio-name{
+
+    text-align:center;
+
+    color:#0B5D3B;
+
+    font-weight:800;
+
+}
+
+.bio-position{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:30px;
+
+}
+
+.bio-section{
+
+    margin-bottom:30px;
+
+}
+
+.bio-section h5{
+
+    color:#0B5D3B;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    border-left:4px solid #D4AF37;
+
+    padding-left:12px;
+
+}
+
+.bio-section h5 i{
+
+    color:#D4AF37;
+
+    margin-right:8px;
+
+}
+
+.bio-section p{
+
+    color:#555;
+
+    line-height:1.8;
+
+    text-align:justify;
+
+}
+
+.bio-list{
+
+    padding-left:18px;
+
+}
+
+.bio-list li{
+
+    margin-bottom:10px;
+
+}
+
+.biography-btn{
+
+    background:#0B5D3B;
+
+    color:#fff;
+
+
+    padding:12px 35px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:.35s;
+
+}
+
+.biography-btn:hover{
+
+    background:#D4AF37;
+
+    color:#fff;
+
+}
+.bio-cover{
+
+    height:180px;
+
+    overflow:hidden;
+
+    margin:-16px -16px 30px;
+
+}
+
+.cover-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.bio-avatar{
+
+    width:170px;
+
+    height:170px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-top:-90px;
+
+    border:6px solid #fff;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.info-card{
+
+    background:#fff;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    margin:30px 0;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.info-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    padding:12px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.timeline{
+
+    border-left:3px solid #C59D32;
+
+    margin-left:10px;
+
+    padding-left:25px;
+
+}
+
+.timeline-item{
+
+    position:relative;
+
+    margin-bottom:35px;
+
+}
+
+.timeline-item::before{
+
+    content:"";
+
+    width:16px;
+
+    height:16px;
+
+    background:#0B5D3B;
+
+    border:3px solid #C59D32;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:-34px;
+
+    top:5px;
+
+}
+
+.year{
+
+    color:#C59D32;
+
+    font-weight:700;
+
+    margin-bottom:6px;
+
+}
+/*=========================================
+RESPONSIVE DESIGN
+Mobile • Tablet • Desktop
+=========================================*/
+
+/* Large Desktop */
+@media (min-width:1400px){
+
+    .biography-panel{
+        width:560px !important;
+    }
+
+}
+
+/* Laptop & Tablet Landscape */
+@media (max-width:991px){
+
+    .biography-panel{
+        width:460px !important;
+    }
+
+    .bio-cover{
+        height:160px;
+    }
+
+    .bio-avatar{
+        width:140px;
+        height:140px;
+        margin-top:-70px;
+    }
+
+    .bio-name{
+        font-size:1.7rem;
+    }
+
+    .bio-position{
+        font-size:.95rem;
+    }
+
+    .bio-stats{
+        grid-template-columns:repeat(3,1fr);
+        gap:10px;
+    }
+
+    .bio-actions{
+        flex-direction:column;
+    }
+
+    .bio-actions .btn{
+        width:100%;
+    }
+
+}
+
+/* Tablet Portrait */
+@media (max-width:768px){
+
+    .biography-panel{
+        width:100% !important;
+    }
+
+    .bio-cover{
+        height:150px;
+    }
+
+    .bio-avatar{
+        width:120px;
+        height:120px;
+        margin-top:-60px;
+        border-width:4px;
+    }
+
+    .bio-name{
+        font-size:1.45rem;
+    }
+
+    .bio-position{
+        font-size:.9rem;
+    }
+
+    .info-row{
+        flex-direction:column;
+        gap:5px;
+    }
+
+    .bio-stats{
+        grid-template-columns:1fr;
+    }
+
+    .bio-social{
+        flex-wrap:wrap;
+    }
+
+    .bio-actions{
+        flex-direction:column;
+    }
+
+    .bio-actions .btn{
+        width:100%;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:576px){
+
+    .biography-panel{
+        width:100% !important;
+    }
+
+    .offcanvas-body{
+        padding:20px;
+    }
+
+    .bio-cover{
+        height:120px;
+    }
+
+    .bio-avatar{
+        width:100px;
+        height:100px;
+        margin-top:-50px;
+    }
+
+    .bio-name{
+        font-size:1.2rem;
+    }
+
+    .bio-position{
+        font-size:.85rem;
+    }
+
+    .bio-section h5{
+        font-size:1rem;
+    }
+
+    .bio-section p{
+        font-size:.92rem;
+        line-height:1.7;
+    }
+
+    .quote-box{
+        padding:15px;
+    }
+
+    .bio-stats .stat{
+        padding:15px;
+    }
+
+    .bio-stats h3{
+        font-size:1.6rem;
+    }
+
+    .bio-social a{
+        width:42px;
+        height:42px;
+        font-size:1rem;
+    }
+
 }
