@@ -247,7 +247,7 @@ const swiper = new Swiper(".videoSwiper", {
 </div>
 
 </nav>
-hero
+
 
 <section class="page-banner news-banner">
 
@@ -391,7 +391,172 @@ Media Releases
 </div>
 
 </section>
+<!-- ================= SPEECHES ================= -->
 
+<section class="speech-section py-5" id="speeches">
+
+    <div class="container">
+
+        <div class="section-heading text-center mb-5">
+
+            <div class="heading-badge">
+                <i class="fas fa-microphone"></i>
+                Official Speech Archive
+            </div>
+
+            <h2 class="heading-title">
+                Senate Speeches
+            </h2>
+
+            <p>
+                Official speeches delivered by Senator Robin Padilla during
+                Senate sessions, committee hearings and public engagements.
+            </p>
+
+        </div>
+
+        <div class="speech-toolbar">
+
+            <input
+                type="text"
+                id="speechSearch"
+                class="form-control"
+                placeholder="Search speeches...">
+
+        </div>
+
+        <div id="speechContainer" class="mt-5"></div>
+
+    </div>
+
+</section>
+<!-- ================= OFFICIAL SPEECHES ================= -->
+
+<section class="speech-section py-5" id="speeches">
+
+    <div class="container">
+
+        <div class="section-heading text-center mb-5">
+
+            <span class="section-label">
+                OFFICE OF SENATOR ROBIN PADILLA
+            </span>
+
+            <h2 class="heading-title">
+                Official Speeches
+            </h2>
+
+            <p class="heading-text">
+                Official speeches delivered by Senator Robin Padilla during Senate sessions,
+                committee hearings, public events, and national engagements.
+            </p>
+
+        </div>
+
+        <div class="speech-list">
+
+            <!-- Speech 1 -->
+            <article class="speech-item">
+
+                <div class="speech-date">
+                    <span>28</span>
+                    <small>JUL 2026</small>
+                </div>
+
+                <div class="speech-content">
+
+                    <div class="speech-category">
+                        Senate Session
+                    </div>
+
+                    <h3>
+                        Privilege Speech on Constitutional Reform
+                    </h3>
+
+                    <p>
+                        Senator Robin Padilla discussed proposed constitutional reforms,
+                        institutional development, and measures aimed at strengthening
+                        democratic governance.
+                    </p>
+
+                    <div class="speech-meta">
+
+                        <span>
+                            <i class="fas fa-microphone"></i>
+                            Privilege Speech
+                        </span>
+
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            18 Minutes
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <div class="speech-actions">
+
+                    <a href="#" class="btn btn-success">
+                        Read Transcript
+                    </a>
+
+                    <a href="#" class="btn btn-outline-success">
+                        Watch Video
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Speech 2 -->
+
+            <article class="speech-item">
+
+                <div class="speech-date">
+
+                    <span>18</span>
+
+                    <small>JUN 2026</small>
+
+                </div>
+
+                <div class="speech-content">
+
+                    <div class="speech-category">
+                        Committee Hearing
+                    </div>
+
+                    <h3>
+                        Education and Youth Development
+                    </h3>
+
+                    <p>
+                        Address during the committee hearing emphasizing education,
+                        youth empowerment, and long-term national development.
+                    </p>
+
+                </div>
+
+                <div class="speech-actions">
+
+                    <a href="#" class="btn btn-success">
+                        Read Transcript
+                    </a>
+
+                    <a href="#" class="btn btn-outline-success">
+                        Watch Video
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- GALLERY -->
 
@@ -563,25 +728,53 @@ Featured
     </marquee>
 
 </section>
-<!-- ================= FOOTER ================= -->
-
 
 <footer class="footer">
 
-<div class="container">
+    <div class="container footer-wrapper">
 
-<p>
+        <div></div>
 
-© 2026 Office of Senator Robin Padilla
+        <!-- Social Icons -->
+        <div class="footer-socials">
 
-</p>
+            <a href="https://www.facebook.com/SenRobinhoodPadilla" class="footer-social" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
 
-<p>
+           <a href="https://www.instagram.com/" class="footer-social" target="_blank">
+                <i class="fab fa-instagram"></i>
 
-</p>
+            <a href="https://x.com/" class="footer-social" target="_blank">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+
+           <a href="https://www.tiktok.com/" class="footer-social" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+
+            <a href="https://www.youtube.com/" class="footer-social" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+
+        </div>
+
+  <!-- Senate Logo -->
+        <a href="index.html" class="footer-logo">
+            <img src="images/senate-logo.png" alt="Senate Logo">
+        </a>
+
+    </div>
+<div class="footer-bottom">
+
+    <p>
+        Copyright © 2026 <strong>Office of Senator Robin Padilla</strong>.
+        All Rights Reserved.
+    </p>
+
+    <a href="privacy-policy.html">Privacy Policy</a>
 
 </div>
-
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -718,6 +911,23 @@ AOS.init({
 const lightbox = GLightbox({
     selector: '.gallery-item a'
 });
+window.addEventListener("scroll",function(){
+
+    const navbar=document.querySelector(".navbar");
+
+    if(window.scrollY>50){
+
+        navbar.classList.add("scrolled");
+
+    }else{
+
+        navbar.classList.remove("scrolled");
+
+    }
+
+});
 </script>
+<script src="speeches.js"></script>
+<script src="news.js"></script>
 </body>
 </html>
