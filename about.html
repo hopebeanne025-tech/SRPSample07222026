@@ -33,10 +33,6 @@
 
 <body>
 
-AOS.init({
-    duration:1000,
-    once:true
-});
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -734,6 +730,21 @@ backToTop.onclick = function(){
     });
 
 };
+window.addEventListener("scroll",function(){
+
+    const navbar=document.querySelector(".navbar");
+
+    if(window.scrollY>50){
+
+        navbar.classList.add("scrolled");
+
+    }else{
+
+        navbar.classList.remove("scrolled");
+
+    }
+
+});
 </script>
 
 <button id="backToTop" aria-label="Back to Top">
