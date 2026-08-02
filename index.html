@@ -15,6 +15,8 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
 <link rel="stylesheet" href="style.css">
@@ -34,25 +36,12 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
-const swiper = new Swiper(".videoSwiper", {
-    loop: true,
-    speed: 800,
 
-    pagination: {
-        el: ".video-pagination",
-        clickable: true,
-    },
-
-    autoplay: { 
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-});
 </script>
     
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
 
 <div class="container">
 <!-- Logo sa kanan -->
@@ -68,7 +57,7 @@ const swiper = new Swiper(".videoSwiper", {
 
 <span class="navbar-toggler-icon"></span>
 <span class="news-badge">
-    SENATE OF THE PHILIPPINES
+    SENATOR ROBIN PADILLA
 </span>
 
 </button>
@@ -248,47 +237,49 @@ const swiper = new Swiper(".videoSwiper", {
 <!-- ================= HERO ================= -->
 
 <section class="hero">
-<div class="hero-banner">
-    <img src="images/robinlogo2.png" class="hero-img img-fluid">
-</div>
-<div class="container">
 
-<div class="row align-items-center">
+    <div class="container">
 
-<div class="col-lg-6">
+        <div class="row align-items-center gy-5 gx-lg-6">
 
-<div class="hero-image">
+            <!-- LEFT -->
+            <div class="col-lg-6 pe-lg-5 ps-lg-5">
 
-</div>
+                <div class="hero-banner">
+                    <img src="images/robinlogo2.png"
+                         class="hero-img img-fluid"
+                         alt="Robin Padilla">
+                </div>
 
-<div class="col-lg-6">
+            </div>
+
+            <!-- RIGHT -->
+            <div class="col-lg-6 ps-lg-5">
+
+                <div class="hero-text">
+
+                    <h1 class="hero-title">
+                        <span class="word sino"><span class="gold">S</span>ino si</span><br>
+                        <span class="word robin"><span class="gold">R</span>obin</span><br>
+                        <span class="word padilla"><span class="gold">P</span>adilla</span>
+                    </h1>
+
+                    <a class="learn-btn"
+                       data-bs-toggle="offcanvas"
+                       data-bs-target="#bioOffcanvas">
+
+                        <i class="fa-solid fa-play"></i>
+                        LEARN MORE
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-</div>
-
-<div class="hero-text">
-
-<h1 class="hero-title">
-    <span class="word sino"><span class="gold">S</span>ino&nbsp;si</span><br>
-
-    <span class="word robin"><span class="gold">R</span>obin</span><br>
-
-    <span class="word padilla"><span class="gold">P</span>adilla</span>
-</h1>
-
-<p>
-
-</p>
-
-<a class="learn-btn"
-   data-bs-toggle="offcanvas"
-   data-bs-target="#bioOffcanvas">
-    <i class="fa-solid fa-play"></i>
-    LEARN MORE
-</a>
-
-</div>
-
 
 </section>
 
@@ -448,7 +439,7 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 <p class="section-subtitle">
 
 </p>
-
+    
 <div class="row">
 <div class="section-heading text-center mb-5">
 
@@ -464,12 +455,18 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 
         <div class="main-video">
 
-            <iframe id="mainVideo"
+          <iframe id="mainVideo"
+src="https://www.youtube.com/embed/HSybZ6ip-2o?autoplay=1&mute=1&rel=0"
+allow="autoplay; encrypted-media; picture-in-picture"
+allowfullscreen>
+</iframe>
+ <p class="video-description">
 
-            src="https://www.youtube.com/embed/HSybZ6ip-2o"
+    <i class="fa-solid fa-quote-left"></i>
 
-            allowfullscreen></iframe>
+    Patuloy na panawagan ni Sen. Robinhood Padilla ukol sa usapin ng enerhiya, transportasyon, kapakanan ng kabataan, at pagsugpo sa mataas na kriminalidad sa bansa—inilahad sa kanyang Kontra-SONA.
 
+</p>
         </div>
 
     </div>
@@ -477,35 +474,210 @@ AT MALAYANG PAGPAPAHAYAG</h4>
     <!-- PLAYLIST -->
     <div class="col-lg-5">
 
-       <!-- Video 1 -->
-<div class="playlist-item active" data-video="BLpm2_36I8U">
+    <div class="swiper photoSlider">
 
-    <div class="thumb">
-        <img src="https://img.youtube.com/vi/BLpm2_36I8U/mqdefault.jpg">
-        <i class="fa-solid fa-circle-play"></i>
+    <div class="swiper-wrapper">
+ 
+        <div class="swiper-slide">
+        <img src="images/news1.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
     </div>
 
-    <div>
-        <h6>Senate Video 1</h6>
-        <small>Official Video</small>
+    </div>  
+
+    <div class="swiper-slide">
+        <img src="images/bin1.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
     </div>
 
-</div>
-
-<!-- Video 2 -->
-<div class="playlist-item" data-video="J9k0DeGr4m0">
-
-    <div class="thumb">
-        <img src="https://img.youtube.com/vi/zJOGQoWnppk/mqdefault.jpg">
-        <i class="fa-solid fa-circle-play"></i>
     </div>
 
-    <div>
-        <h6>Senate Video 2</h6>
-        <small>Official Video</small>
+    <div class="swiper-slide">
+        <img src="images/bin3.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
     </div>
 
-</div>
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/bin4.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/bin5.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/bin6.jpg" alt="">
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/bin7.jpg">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/TR.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/TR1.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+    <div class="swiper-slide">
+        <img src="images/TR2.jpg" alt="">
+           <div class="photo-overlay">
+
+        <span class="photo-date">
+            July 28, 2026
+        </span>
+
+        <h3>
+            Senate Plenary Session
+        </h3>
+
+        <p>
+            Senator Robin Padilla delivers his privilege speech during the
+            Second Regular Session of the 20th Congress.
+        </p>
+
+    </div>
+
+    </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+
 </div>
 
 </section>
@@ -600,10 +772,6 @@ AT MALAYANG PAGPAPAHAYAG</h4>
 
         </div>
 
-  <!-- Senate Logo -->
-        <a href="index.html" class="footer-logo">
-            <img src="images/senate-logo.png" alt="Senate Logo">
-        </a>
 
     </div>
 <div class="footer-bottom">
@@ -646,23 +814,7 @@ document.addEventListener("DOMContentLoaded", function(){
     });
 
 });
-const videoSwiper = new Swiper(".videoSwiper", {
 
-    loop: true,
-
-    allowTouchMove: false, // <-- idagdag ito
-
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    }
-
-});
 const mainVideo=document.getElementById("mainVideo");
 
 const items=document.querySelectorAll(".playlist-item");
@@ -787,6 +939,34 @@ form.addEventListener("submit", function(e){
         console.log(error);
 
     });
+
+});
+
+const photoSlider = new Swiper(".photoSlider", {
+    loop: true,
+    speed: 800,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".photoSlider .swiper-pagination",
+        clickable: true,
+    },
+});
+window.addEventListener("scroll",function(){
+
+    const navbar=document.querySelector(".navbar");
+
+    if(window.scrollY>50){
+
+        navbar.classList.add("scrolled");
+
+    }else{
+
+        navbar.classList.remove("scrolled");
+
+    }
 
 });
 </script>
